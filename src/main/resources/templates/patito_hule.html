@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>padp</title>
 </head>
-<!--body>
-<form method="post" th:action="@{'/patito_hule'}">
+<body>
+<h1>STF:GAMES: El escape de los patitos hule</h1>
+<!--form method="post" th:action="@{'/patito_hule'}">
 
         <div class="form-group">
             <label for="fila">Número de filas: </label>
@@ -29,6 +30,28 @@
     </div>
 
     <a th:href="@{'/patito_hule/play'}" class="btn btn-primary">Ejecutar</a>
+</form-->
+<form th:object="${persona}" class="form">
+    <div class="column">
+        <div class="input-box">
+            <label>FILAS</label>
+            <input type="text" placeholder="Ingrese su FILAS" required />
+        </div>
+        <div class="input-box">
+            <label>COLUMNAS</label>
+            <input type="text" placeholder="Ingrese su COLUMNAS" required />
+        </div>
+    </div>
+    <div class="column">
+        <div class="input-box">
+            <label>INICIALES</label>
+            <input type="text" placeholder="Ingrese su INCIALES" required />
+        </div>
+        <div class="input-box">
+            <label>FOTOS</label>
+            <input type="text" placeholder="Ingrese su FOTOS" required />
+        </div>
+    </div>
 </form>
-</body-->
+</body>
 </html>
