@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>padp</title>
+</head>
+<body>
+<form th:object="${persona}" class="form">
+    <div class="column">
+        <div class="input-box">
+            <label>Número de filas: </label>
+            <input type="text" placeholder="Ingrese su fila" required />
+        </div>
+        <div class="input-box">
+            <label>Número de columnas:</label>
+            <input type="text" placeholder="Ingrese su columna" required />
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="input-box">
+            <label>Posiciones iniciales: </label>
+            <input type="text" placeholder="Ingrese su posicion inicial" required />
+        </div>
+        <div class="input-box">
+            <label>Número de fotos tomadas:</label>
+            <input type="text" placeholder="Ingrese su foto tomada" required />
+        </div>
+    </div>
+    <button>Ejecutar</button>
+</form>
+</body>
+</html>
