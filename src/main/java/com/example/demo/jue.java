@@ -11,4 +11,14 @@ public class jue {
             return "/patito_hule";
         }
     }
+
+    @Controller
+    public class play {
+        @GetMapping("/patito_hule/play")
+        public String patitos1() {
+            return "/patito_hule/play";
+        }
+    }
+
+
 }
